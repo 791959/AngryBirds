@@ -5,6 +5,7 @@ using UnityEngine;
 public class Bird : MonoBehaviour
 {
     // Start is called before the first frame update
+    bool first=true;
     void Start()
     {
         Destroy(this.gameObject, 5.20f);
@@ -27,9 +28,16 @@ public class Bird : MonoBehaviour
             GameObject.Destroy(collision.transform.GetComponent<Rigidbody2D>());
             GameObject.Destroy(collision.gameObject,1f);
         }
-        else if (collision.transform.tag == "Enemy")
+        else if (collision.transform.tag == "Wood")
         {
-          //  String.instance.DieAudio(1);
+            if (first)
+            {
+                first = false;
+                //  String.instance.DieAudio(1);
+                //GameObject.Destroy(this.transform.GetComponent<Collider2D>());
+                collision.gameObject.GetComponent<Wood>().OnCollision();
+            }
+            
         }
     }
 }

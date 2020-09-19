@@ -8,6 +8,10 @@ public class String : MonoBehaviour
     GameObject birdObj;
     Rigidbody2D rb;
     Vector3 launchPos;
+    public Text remainText;
+    public Text resultLayout;
+    public GameObject layout;
+    public AudioClip woodAudio;
     public AudioClip[] audioClip;
     public AudioSource audioSource;
     public AudioClip[] audioClipTwo;
@@ -16,6 +20,7 @@ public class String : MonoBehaviour
     public GameObject launchSpot;
     public GameObject leftS;
     public GameObject rightS;
+    public int winNum = 10;
 
     public float vMu = 600.0f;
     public bool aimMode = false;
@@ -25,6 +30,7 @@ public class String : MonoBehaviour
     public static String instance;
     int num = 0;
     public Text text;
+    public int remainNum=10;
     // Start is called before the first frame update
     private void Awake()
     {
@@ -49,10 +55,24 @@ public class String : MonoBehaviour
         num++;
         text.text = "Score:" + num;
     }
-
+    void SetOutput(string result)
+    {
+        layout.SetActive(true);
+        resultLayout.text = result;
+    }
     // Update is called once per frame
     void Update()
     {
+
+        if (remainNum <= 0)
+        {
+            SetOutput("Fail!");
+        }
+        if (num >= winNum)
+        {
+            SetOutput("Win!");
+        }
+
         if (!aimMode)
             return;
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -93,6 +113,8 @@ public class String : MonoBehaviour
             FollowCam.S.target = birdObj;
             birdObj = null;
             PlayAudio();
+            remainNum--;
+            remainText.text ="Remain Birds:"+ remainNum.ToString();
         }
     }
     private void OnMouseEnter()
@@ -133,5 +155,10 @@ public class String : MonoBehaviour
             audioSourceTwo.clip = audioClipTwo[2];
         }
         audioSourceTwo.Play();
+    }
+    public void PlayWoodAudio()
+    {
+        audioSource.clip = woodAudio;
+        audioSource.Play();
     }
 }

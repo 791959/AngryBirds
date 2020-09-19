@@ -153,7 +153,7 @@ RectTransform:
   m_Children:
   - {fileID: 1713430602}
   m_Father: {fileID: 1910216220}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -260,11 +260,12 @@ GameObject:
   m_Component:
   - component: {fileID: 93127276}
   - component: {fileID: 93127279}
+  - component: {fileID: 93127280}
   - component: {fileID: 93127278}
   - component: {fileID: 93127277}
   m_Layer: 0
   m_Name: woodLong (1)
-  m_TagString: Enemy
+  m_TagString: Wood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -380,6 +381,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &93127280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 93127275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6e34a640af121745a3bbaa320155613, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &338779813
 GameObject:
   m_ObjectHideFlags: 0
@@ -800,6 +813,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &621875001 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1875553298639971737, guid: b4372780d1bcabe40b4bdb0631e2a706,
+    type: 3}
+  m_PrefabInstance: {fileID: 1875553298185874080}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1139,11 +1158,12 @@ GameObject:
   m_Component:
   - component: {fileID: 736438470}
   - component: {fileID: 736438473}
+  - component: {fileID: 736438474}
   - component: {fileID: 736438472}
   - component: {fileID: 736438471}
   m_Layer: 0
   m_Name: woodLong (10)
-  m_TagString: Enemy
+  m_TagString: Wood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1259,6 +1279,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &736438474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736438469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6e34a640af121745a3bbaa320155613, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &752557380
 GameObject:
   m_ObjectHideFlags: 0
@@ -1616,11 +1648,12 @@ GameObject:
   m_Component:
   - component: {fileID: 909465392}
   - component: {fileID: 909465395}
+  - component: {fileID: 909465396}
   - component: {fileID: 909465394}
   - component: {fileID: 909465393}
   m_Layer: 0
   m_Name: woodshort (2)
-  m_TagString: Enemy
+  m_TagString: Wood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1736,6 +1769,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &909465396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909465391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6e34a640af121745a3bbaa320155613, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1975,6 +2020,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 866f7fb2fef4a2b43af47c7a2e10f229, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  remainText: {fileID: 2095513894}
+  resultLayout: {fileID: 2073342548}
+  layout: {fileID: 621875001}
+  woodAudio: {fileID: 8300000, guid: f7872a240c3a867458646a6a01dde6a2, type: 3}
   audioClip:
   - {fileID: 8300000, guid: 32b5cb2ec3029484eb0a71e43bd697e0, type: 3}
   - {fileID: 8300000, guid: 3641c9435ad52ea429348437c2742cdb, type: 3}
@@ -1990,9 +2039,11 @@ MonoBehaviour:
   launchSpot: {fileID: 1746929759}
   leftS: {fileID: 868248030}
   rightS: {fileID: 1955772858}
+  winNum: 20
   vMu: 10
   aimMode: 0
   text: {fileID: 1083785961}
+  remainNum: 30
 --- !u!4 &1025998536
 Transform:
   m_ObjectHideFlags: 0
@@ -2038,11 +2089,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1083505705}
   - component: {fileID: 1083505708}
+  - component: {fileID: 1083505709}
   - component: {fileID: 1083505707}
   - component: {fileID: 1083505706}
   m_Layer: 0
   m_Name: woodLong (4)
-  m_TagString: Enemy
+  m_TagString: Wood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2158,6 +2210,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1083505709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1083505704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6e34a640af121745a3bbaa320155613, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1083785959
 GameObject:
   m_ObjectHideFlags: 0
@@ -2188,7 +2252,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1910216220}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2326,11 +2390,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1161512632}
   - component: {fileID: 1161512635}
+  - component: {fileID: 1161512636}
   - component: {fileID: 1161512634}
   - component: {fileID: 1161512633}
   m_Layer: 0
   m_Name: woodLong (6)
-  m_TagString: Enemy
+  m_TagString: Wood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2446,6 +2511,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1161512636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161512631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6e34a640af121745a3bbaa320155613, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1283227103
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2620,11 +2697,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1395073822}
   - component: {fileID: 1395073825}
+  - component: {fileID: 1395073826}
   - component: {fileID: 1395073824}
   - component: {fileID: 1395073823}
   m_Layer: 0
   m_Name: woodBottom (3)
-  m_TagString: Untagged
+  m_TagString: Wood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2740,6 +2818,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1395073826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395073821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6e34a640af121745a3bbaa320155613, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1416386847 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2764352421808461016, guid: 97d792db1c91e864e86b18998e25f40e,
@@ -2775,11 +2865,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1550157115}
   - component: {fileID: 1550157118}
+  - component: {fileID: 1550157119}
   - component: {fileID: 1550157117}
   - component: {fileID: 1550157116}
   m_Layer: 0
   m_Name: woodBottom (2)
-  m_TagString: Untagged
+  m_TagString: Wood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2895,6 +2986,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1550157119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1550157114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6e34a640af121745a3bbaa320155613, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1604485089
 GameObject:
   m_ObjectHideFlags: 0
@@ -2905,11 +3008,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1604485090}
   - component: {fileID: 1604485093}
+  - component: {fileID: 1604485094}
   - component: {fileID: 1604485092}
   - component: {fileID: 1604485091}
   m_Layer: 0
   m_Name: woodLong (9)
-  m_TagString: Enemy
+  m_TagString: Wood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3025,6 +3129,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1604485094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604485089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6e34a640af121745a3bbaa320155613, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1713430601
 GameObject:
   m_ObjectHideFlags: 0
@@ -3193,11 +3309,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1891710201}
   - component: {fileID: 1891710204}
+  - component: {fileID: 1891710205}
   - component: {fileID: 1891710203}
   - component: {fileID: 1891710202}
   m_Layer: 0
   m_Name: woodLong (7)
-  m_TagString: Enemy
+  m_TagString: Wood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3313,6 +3430,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1891710205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891710200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6e34a640af121745a3bbaa320155613, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1910216216
 GameObject:
   m_ObjectHideFlags: 0
@@ -3403,8 +3532,9 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 1083785960}
   - {fileID: 60258559}
+  - {fileID: 1875553298185874081}
+  - {fileID: 1083785960}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3566,6 +3696,30 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2073342548 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1875553299335928052, guid: b4372780d1bcabe40b4bdb0631e2a706,
+    type: 3}
+  m_PrefabInstance: {fileID: 1875553298185874080}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2095513894 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1875553299320105862, guid: b4372780d1bcabe40b4bdb0631e2a706,
+    type: 3}
+  m_PrefabInstance: {fileID: 1875553298185874080}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2128652643
 GameObject:
   m_ObjectHideFlags: 0
@@ -3840,6 +3994,182 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97d792db1c91e864e86b18998e25f40e, type: 3}
+--- !u!1001 &1875553298185874080
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1910216220}
+    m_Modifications:
+    - target: {fileID: 1875553298639971737, guid: b4372780d1bcabe40b4bdb0631e2a706,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1875553299198179512, guid: b4372780d1bcabe40b4bdb0631e2a706,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 963194231}
+    - target: {fileID: 1875553299395143068, guid: b4372780d1bcabe40b4bdb0631e2a706,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1875553299395143068, guid: b4372780d1bcabe40b4bdb0631e2a706,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1917.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1875553299395143068, guid: b4372780d1bcabe40b4bdb0631e2a706,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -5.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1875553299395143068, guid: b4372780d1bcabe40b4bdb0631e2a706,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1077.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1875553299395143069, guid: b4372780d1bcabe40b4bdb0631e2a706,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300002, guid: 653bead75975e2f418b3e17e6b1f3346,
+        type: 3}
+    - target: {fileID: 1875553299395143069, guid: b4372780d1bcabe40b4bdb0631e2a706,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1875553299395143069, guid: b4372780d1bcabe40b4bdb0631e2a706,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1875553299395143069, guid: b4372780d1bcabe40b4bdb0631e2a706,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247919065983943228, guid: b4372780d1bcabe40b4bdb0631e2a706,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247919065983943228, guid: b4372780d1bcabe40b4bdb0631e2a706,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247919065983943228, guid: b4372780d1bcabe40b4bdb0631e2a706,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247919065983943228, guid: b4372780d1bcabe40b4bdb0631e2a706,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247919065983943228, guid: b4372780d1bcabe40b4bdb0631e2a706,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247919065983943228, guid: b4372780d1bcabe40b4bdb0631e2a706,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247919065983943228, guid: b4372780d1bcabe40b4bdb0631e2a706,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247919065983943228, guid: b4372780d1bcabe40b4bdb0631e2a706,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247919065983943228, guid: b4372780d1bcabe40b4bdb0631e2a706,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247919065983943228, guid: b4372780d1bcabe40b4bdb0631e2a706,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247919065983943228, guid: b4372780d1bcabe40b4bdb0631e2a706,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247919065983943228, guid: b4372780d1bcabe40b4bdb0631e2a706,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247919065983943228, guid: b4372780d1bcabe40b4bdb0631e2a706,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247919065983943228, guid: b4372780d1bcabe40b4bdb0631e2a706,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247919065983943228, guid: b4372780d1bcabe40b4bdb0631e2a706,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247919065983943228, guid: b4372780d1bcabe40b4bdb0631e2a706,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247919065983943228, guid: b4372780d1bcabe40b4bdb0631e2a706,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247919065983943228, guid: b4372780d1bcabe40b4bdb0631e2a706,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247919065983943228, guid: b4372780d1bcabe40b4bdb0631e2a706,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247919065983943228, guid: b4372780d1bcabe40b4bdb0631e2a706,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247919065983943228, guid: b4372780d1bcabe40b4bdb0631e2a706,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5328994699418112665, guid: b4372780d1bcabe40b4bdb0631e2a706,
+        type: 3}
+      propertyPath: m_Name
+      value: New
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b4372780d1bcabe40b4bdb0631e2a706, type: 3}
+--- !u!224 &1875553298185874081 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3247919065983943228, guid: b4372780d1bcabe40b4bdb0631e2a706,
+    type: 3}
+  m_PrefabInstance: {fileID: 1875553298185874080}
+  m_PrefabAsset: {fileID: 0}
 --- !u!212 &2894506236717217991
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6531,15 +6861,28 @@ GameObject:
   m_Component:
   - component: {fileID: 3084986595351651067}
   - component: {fileID: 2894569577907979141}
+  - component: {fileID: 3087655070844067472}
   - component: {fileID: 3028274138608318409}
   - component: {fileID: 3056818682654618629}
   m_Layer: 0
   m_Name: woodBottom
-  m_TagString: Untagged
+  m_TagString: Wood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &3087655070844067472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3087655070844067471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6e34a640af121745a3bbaa320155613, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3087724860941826255
 GameObject:
   m_ObjectHideFlags: 0
@@ -6568,15 +6911,28 @@ GameObject:
   m_Component:
   - component: {fileID: 3085099858749002553}
   - component: {fileID: 2894870089731037329}
+  - component: {fileID: 3087750378122822590}
   - component: {fileID: 3027766501159000525}
   - component: {fileID: 3056862299909706119}
   m_Layer: 0
   m_Name: woodLong
-  m_TagString: Enemy
+  m_TagString: Wood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &3087750378122822590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3087750378122822589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6e34a640af121745a3bbaa320155613, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3087770818248289831
 GameObject:
   m_ObjectHideFlags: 0
@@ -6710,15 +7066,28 @@ GameObject:
   m_Component:
   - component: {fileID: 3084637344902048567}
   - component: {fileID: 2895190399603481053}
+  - component: {fileID: 3088016036188992358}
   - component: {fileID: 3027747199977270907}
   - component: {fileID: 3057389426250963655}
   m_Layer: 0
   m_Name: woodLong (3)
-  m_TagString: Enemy
+  m_TagString: Wood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &3088016036188992358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3088016036188992357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6e34a640af121745a3bbaa320155613, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3088033667617646247
 GameObject:
   m_ObjectHideFlags: 0
@@ -6834,15 +7203,28 @@ GameObject:
   m_Component:
   - component: {fileID: 3084613765567956675}
   - component: {fileID: 2895220853152299171}
+  - component: {fileID: 3088141877822728658}
   - component: {fileID: 3027748058581696187}
   - component: {fileID: 3056801267715848021}
   m_Layer: 0
   m_Name: woodshort (1)
-  m_TagString: Enemy
+  m_TagString: Wood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &3088141877822728658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3088141877822728657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6e34a640af121745a3bbaa320155613, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3088161136886350605
 GameObject:
   m_ObjectHideFlags: 0
@@ -6870,15 +7252,28 @@ GameObject:
   m_Component:
   - component: {fileID: 3085252406649922577}
   - component: {fileID: 2895289840363086199}
+  - component: {fileID: 3088202784537406780}
   - component: {fileID: 3028140434668092597}
   - component: {fileID: 3057230742815754689}
   m_Layer: 0
   m_Name: woodLong (5)
-  m_TagString: Enemy
+  m_TagString: Wood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &3088202784537406780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3088202784537406779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6e34a640af121745a3bbaa320155613, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3088326816203065821
 GameObject:
   m_ObjectHideFlags: 0
@@ -6959,15 +7354,28 @@ GameObject:
   m_Component:
   - component: {fileID: 3085305782390021541}
   - component: {fileID: 2895104072159580767}
+  - component: {fileID: 3088427697174386544}
   - component: {fileID: 3028268990867611885}
   - component: {fileID: 3057200325838795479}
   m_Layer: 0
   m_Name: woodBottom (1)
-  m_TagString: Untagged
+  m_TagString: Wood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &3088427697174386544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3088427697174386543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6e34a640af121745a3bbaa320155613, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3088449850298676497
 GameObject:
   m_ObjectHideFlags: 0
@@ -6978,15 +7386,28 @@ GameObject:
   m_Component:
   - component: {fileID: 3085072981960205149}
   - component: {fileID: 2894675183591729947}
+  - component: {fileID: 3088449850298676498}
   - component: {fileID: 3028205539441070217}
   - component: {fileID: 3056605202876030839}
   m_Layer: 0
   m_Name: woodLong (2)
-  m_TagString: Enemy
+  m_TagString: Wood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &3088449850298676498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3088449850298676497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6e34a640af121745a3bbaa320155613, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3088457612315707199
 GameObject:
   m_ObjectHideFlags: 0
